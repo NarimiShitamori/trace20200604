@@ -3,9 +3,13 @@
 * {
      margin: 0;
      padding: 0;
-     font-family: 'Overpass', sans-serif;
-     letter-spacing: 0.3rem;
+     font-family: 'Overpass',  Yu Gothic Medium , sans-serif;
 }
+
+
+/* ---------------------
+PCFV
+--------------------- */
 
 .TOPmain {
     background-image: url("../img/download-3.jpg");
@@ -20,13 +24,63 @@
     text-align: center;
     padding-top: 50px;
     font-size: 0.7rem;
+    letter-spacing: 0.3rem;
 }
 
 .brandTitle {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 .brandTitle__img {
     width: 20%;
+}
+
+.brandTitle__sub {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+}
+
+.PCmenu {
+    padding-top: 130px;
+}
+
+.PCnavi {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    width:70%;
+    background-color: #FAF7F2;
+    font-size: 0.7rem;
+    height:60px;
+}
+
+.PCnavi li {
+    padding-left: 33px;
+    margin: auto;
+}
+
+.PCnavi li:last-child {
+    padding-right: 33px;
+    position: relative;
+}
+
+.PCnavi li:nth-last-child(2) {
+    padding-right: 27px;
+}
+
+.PCnavi li:last-child::before {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    bottom: 23px;
+    content: url("../img/download-4.png");
+}
+
+.PCnavi li a {
+    text-decoration: none;
+    color: #000;
 }
