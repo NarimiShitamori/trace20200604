@@ -15,29 +15,29 @@ PCFV
     background-image: url("../img/download-3.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    
+    width: 100%;
+    height: 100%;
 }
 
 .subTitle {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 2%;
     font-size: 0.7rem;
     letter-spacing: 0.3rem;
 }
 
 .brandTitle {
     text-align: center;
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 .brandTitle__img {
-    width: 20%;
+    width: 23%;
+    height: 100%;
 }
 
 .brandTitle__sub {
-    padding-top: 30px;
+    padding-top: 60px;
     text-align: center;
     font-weight: 900;
     font-size: 1.6rem;
@@ -45,37 +45,37 @@ PCFV
 }
 
 .PCmenu {
-    padding-top: 130px;
+    padding: 70px;
 }
 
 .PCnavi {
     display: flex;
     list-style: none;
     margin: 0 auto;
-    width:70%;
+    width:90%;
     background-color: #FAF7F2;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     height:60px;
 }
 
 .PCnavi li {
-    padding-left: 33px;
-    margin: auto;
+    padding-left: 13px;
+    margin: 20px auto;
 }
 
 .PCnavi li:last-child {
-    padding-right: 33px;
+    padding-right: 13px;
     position: relative;
 }
 
 .PCnavi li:nth-last-child(2) {
-    padding-right: 27px;
+    padding-right: 13px;
 }
 
 .PCnavi li:last-child::before {
     position: absolute;
     top: 2px;
-    left: 5px;
+    left: -7px;
     bottom: 23px;
     content: url("../img/download-4.png");
 }
@@ -83,4 +83,280 @@ PCFV
 .PCnavi li a {
     text-decoration: none;
     color: #000;
+}
+
+.PCnavi li a:hover {
+    color: #AD9B50;
+}
+
+/* ---------------------
+about and products section
+-------------------- */
+
+.about {
+    display: flex;
+    margin-top: 10%;
+}
+
+.about__imgBox img {
+    width: 95%;
+    height: auto;
+    padding-left:20px;
+}
+
+.about__textbox {
+    padding: 1% 3%;
+}
+
+.about__textbox h2 {
+    font-size: 350%;
+    line-height: 95%;
+}
+
+.about__textboxSub {
+    font-size: 120%;
+    padding-top: 20px;
+}
+
+.about__textboxSub span {
+    color: #AD9B50;
+}
+
+.about__description {
+    font-size: 80%;
+    padding-top: 20px;
+}
+
+.about__button {
+    width: 100px;
+    background-color: #AD9B50;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.about__button:hover {
+    background-color: #fff;
+    color: #AD9B50;
+}
+
+
+/* ---------------------
+classic series
+--------------------- */
+
+.col2 {
+ display: flex;
+ justify-content: center;
+ margin: 0 40px;
+}
+
+.col2__content {
+    margin-top: 8%;
+    
+}
+
+.col2__content1 {
+    padding-right: 80px;
+}
+
+.col2__content img {
+    width: 100%;
+}
+
+.col2__content p {
+    padding-top: 10px;
+    font-size: 110%;
+}
+
+.col2__content:hover {
+    opacity: 0.7;
+}
+
+/* ---------------------
+STORY section
+--------------------- */
+
+.storytitle {
+    text-align: center;
+    font-size: 200%;
+    line-height: 95%;
+    margin: 10% 0 4% 0;
+}
+
+.storySection {
+    background-image: url("../img/download-20.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: 40% 76px;
+}
+
+.storySection p {
+    padding: 200px 0;
+    text-align: center;
+    font-size: 110%;
+}
+
+.storySection p span {
+    margin-bottom: 0.5%;
+	display: block;
+	position: relative;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.storySection p span::before {
+    margin-left: -10px;
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #000;
+    content: "";
+}
+
+/* ---------------------
+onlineshopping BLOG section
+--------------------- */
+
+.onlineshopping {
+    display: flex;
+    margin: 8% 5%;
+}
+
+
+.onlineshopping__imgBox img {
+    width: 100%;
+}
+
+.onlineshopping__textbox {
+    text-align: center;
+    margin: auto;
+    padding: 0 18px;
+}
+
+.onlineshopping__textbox h2 {
+    font-size: 160%;
+}
+
+.onlineshopping__description {
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+.onlineshopping__button {
+    width: 100px;
+    background-color: #AD9B50;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9rem;
+    margin: 30px auto;
+}
+
+.onlineshopping__button:hover {
+    background-color: #fff;
+    color: #AD9B50;
+}
+
+/* ---------------------
+news section
+--------------------- */
+
+.newsContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.newsContent__box {
+    padding-right: 5%;
+}
+
+.newsContent__box:hover {
+    opacity: 0.7;
+}
+
+.newsContent__box:first-child {
+    padding-left: 5%;
+}
+
+.newsContent__img {
+    width: 100%;
+}
+
+.newsContent__box {
+    font-size: 75%;
+}
+
+.newsTitle {
+    font-size: 120%;
+    margin: 8% 0 5% 0;
+    text-align: center;
+    position: relative;
+}
+
+.newsTitle::before {
+    margin-left: -10px;
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    right: 0;
+    bottom: -15px;
+    border-bottom: 1px solid #000;
+    content: "";
+}
+
+.news__more {
+    margin-top: 2%;
+    text-align: center; 
+    font-size: 90%;
+}
+
+/* ---------------------
+footer section
+--------------------- */
+
+footer {
+    background-image: url("../img/f_bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.footer {
+    padding-top: 25%;
+    margin-top: 12%;
+}
+
+.footer p {
+    padding: 0 2% 2% 0;
+    text-align: right;
+    font-size: 80%;
+}
+
+.footerBox {
+    padding-bottom: 5%;
+    padding-left: 5%;
+    display: flex;
+}
+
+.footerNavi {
+    padding-left: 5%;
+}
+
+.footerNavi ul {
+    list-style: none;
+    font-size: 90%;
+}
+
+.footerNavi ul li {
+    padding-bottom: 6%;
+}
+
+.footerlogo_img {
+    margin-right: 5%;
 }
