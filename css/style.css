@@ -6,7 +6,6 @@
      font-family: 'Overpass',  Yu Gothic Medium , sans-serif;
 }
 
-
 /* ---------------------
 PCFV
 --------------------- */
@@ -359,4 +358,220 @@ footer {
 
 .footerlogo_img {
     margin-right: 5%;
+}
+
+/* -------------------
+813以上の時
+------------------- */
+
+@media screen and (min-width: 813px) {
+    .subTitle_sp,.products_pcNO,.onlineshopping_pcNO {
+        display: none;
+    }
+    }
+
+
+/* -------------------
+812pX以下の時
+------------------- */
+
+@media screen and (max-width: 812px) {
+    .TOPmain {
+        background-image: url("../img/download-8.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .PCmenu {
+        display: none;
+    }
+    .subTitle {
+        display: none;
+    }
+    
+    .brandTitle {
+        text-align: center;
+        padding-top: 30%;
+        margin-top: 0;
+    }
+
+    
+    .brandTitle__img {
+        width: 30%;
+        height: 100%;
+    }
+    
+    .brandTitle__sub {
+        padding: 30px 0 30px 0;
+        text-align: center;
+        font-weight: 900;
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    .subTitle_sp {
+        margin: 0 auto;
+        font-size: 0.8rem;
+        padding-bottom: 30%;
+        etter-spacing: 0.3rem;
+    }
+    .about {
+        display: block;
+    }
+    .about__textbox h2 {
+        margin-top: 3%;
+    }
+    
+    .about__button {
+        width: 50%;
+        background-color: #AD9B50;
+        text-align: center;
+        padding: 12px;
+        margin-top: 30px;
+        font-size: 0.9rem;
+    }
+    .products_sp {
+        flex-flow: row-reverse;
+    }
+    .products_spNO {
+        display: none;
+    }
+
+    .about__imgBox img {
+        width: 95%;
+        height: auto;
+        padding-left:5%;
+    }
+    .about__imgBoxSP img {
+        padding-right:5%;
+        padding-left:0%;
+    }
+
+    .col2 {
+        display: block;
+        margin: 0 3%;
+    }
+    .col2__content {
+        margin-top: 8%;
+    }
+
+    .col2__content1 {
+        padding-right: 0px;
+    }
+    .col2__content img {
+        width: 100%;
+    }
+
+    .col2__content p {
+        padding-top: 10px;
+        font-size: 130%;
+    }
+    .storySection {
+        background-image: url("../img/download-21.jpg");
+        background-attachment: scroll;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: 60% 30px;
+    }
+    .onlineshopping {
+        display: block;
+        margin: 15% 3%;
+    }
+    .onlineshopping_spNO {
+        display: none;
+    }
+    .onlineshopping__textbox {
+        text-align: center;
+        padding: 0px;
+    }
+    
+    .onlineshopping__textbox h2 {
+        font-size: 160%;
+        margin-top: 5%;
+    }
+    
+    .onlineshopping__description {
+        margin-top: 10px;
+        font-size: 80%;
+    }
+    
+    .onlineshopping__button {
+        width: 70%;
+        background-color: #AD9B50;
+        text-align: center;
+        padding: 13px;
+        font-size: 0.9rem;
+        margin: 30px auto;
+    }
+
+    .newsContent {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .newsContent {
+        display: flex;
+        width: 100%;
+    }
+    .newsContent__box{
+        padding:0;
+    }
+    .newsContent__box:first-child {
+        padding-left: 0%;
+    }
+
+    .newsContent__box:nth-child(odd) {
+        margin-right: 4%;
+    }
+
+    .newsContent__box:last-child,.newsContent__box:nth-child(3) {
+        margin-top: 3%;
+    }
+    
+    .newsContent__img {
+        width: 100%;
+    }
+    
+    .newsContent__box {
+        font-size: 75%;
+        width: 40%;
+    }
+    
+    .news__more {
+        margin-top: 4%;
+        text-align: center; 
+        font-size: 90%;
+    }
+    footer {
+        background-image: url("../img/f_bgsp.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    
+    .footer {
+        padding-top: 25%;
+        margin-top: 12%;
+    }
+    
+    .footer p {
+        text-align: center;
+        font-size: 80%;
+        padding: 80px 0 20px 0;
+    }
+    
+    .footerBox {
+        padding-bottom: 0%;
+        padding-left: 0%;
+    }
+
+    
+    .footerlogo_img {
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .footerNavi {
+        display: none;
+    }
 }
