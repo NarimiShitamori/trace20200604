@@ -417,6 +417,11 @@ footer {
     .about {
         display: block;
     }
+
+    .aboutsp {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .about__textbox h2 {
         margin-top: 3%;
     }
@@ -477,12 +482,16 @@ footer {
         display: block;
         margin: 15% 3%;
     }
-    .onlineshopping_spNO {
-        display: none;
+    
+    .onlineshopping_sp {
+        display: flex;
+        flex-direction: column-reverse;
     }
+
     .onlineshopping__textbox {
         text-align: center;
         padding: 0px;
+        margin: 0;
     }
     
     .onlineshopping__textbox h2 {
@@ -496,7 +505,7 @@ footer {
     }
     
     .onlineshopping__button {
-        width: 70%;
+        width: 80%;
         background-color: #AD9B50;
         text-align: center;
         padding: 13px;
