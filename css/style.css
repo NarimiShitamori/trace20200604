@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 * {
-     margin: 0;
-     padding: 0;
-     font-family: 'Overpass',  Yu Gothic Medium , sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass',  Yu Gothic Medium , sans-serif;
 }
 
 /* ---------------------
@@ -18,24 +18,24 @@ PCFV
     height: 100%;
 }
 
-.subTitle {
+.TOPmain__subTitle {
     text-align: center;
     padding-top: 2%;
     font-size: 0.7rem;
     letter-spacing: 0.3rem;
 }
 
-.brandTitle {
+.brand {
     text-align: center;
     margin-top: 10%;
 }
 
-.brandTitle__img {
+.brand__logo {
     width: 23%;
     height: 100%;
 }
 
-.brandTitle__sub {
+.brand__catch {
     padding-top: 60px;
     text-align: center;
     font-weight: 900;
@@ -43,7 +43,7 @@ PCFV
     letter-spacing: 0.5rem;
 }
 
-.PCmenu {
+nav {
     padding: 70px;
 }
 
@@ -92,41 +92,43 @@ PCFV
 about and products section
 -------------------- */
 
-.about {
+.aboutProducts {
     display: flex;
     margin-top: 10%;
 }
 
-.about__imgBox img {
-    width: 95%;
+.aboutProducts__imgBox img {
+    width: 100%;
     height: auto;
-    padding-left:20px;
 }
 
-.about__textbox {
-    padding: 1% 3%;
+.aboutProducts__textbox {
+    padding: 1% 4%;
+    width: 50%;
 }
 
-.about__textbox h2 {
+.aboutProducts__textbox h2 {
     font-size: 350%;
     line-height: 95%;
 }
 
-.about__textboxSub {
+.aboutProducts__textboxSub {
     font-size: 120%;
     padding-top: 20px;
+    font-weight: 400;
 }
 
-.about__textboxSub span {
+.aboutProducts__textboxSub span {
     color: #AD9B50;
 }
 
-.about__description {
+.aboutProducts__description {
     font-size: 80%;
     padding-top: 20px;
+    font-weight: 100;
 }
 
-.about__button {
+.aboutProducts__button {
     width: 100px;
     background-color: #AD9B50;
     text-align: center;
@@ -135,7 +137,7 @@ about and products section
     font-size: 0.9rem;
 }
 
-.about__button:hover {
+.aboutProducts__button:hover {
     background-color: #fff;
     color: #AD9B50;
 }
@@ -145,31 +147,31 @@ about and products section
 classic series
 --------------------- */
 
-.col2 {
+.Classic {
  display: flex;
  justify-content: center;
  margin: 0 40px;
 }
 
-.col2__content {
+.Classic__content {
     margin-top: 8%;
     
 }
 
-.col2__content1 {
+.Classic__content1 {
     padding-right: 80px;
 }
 
-.col2__content img {
+.Classic__content img {
     width: 100%;
 }
 
-.col2__content p {
+.Classic__content p {
     padding-top: 10px;
     font-size: 110%;
 }
 
-.col2__content:hover {
+.Classic__content:hover {
     opacity: 0.7;
 }
 
@@ -219,35 +221,34 @@ STORY section
 }
 
 /* ---------------------
-onlineshopping BLOG section
+shoppingBlog BLOG section
 --------------------- */
 
-.onlineshopping {
+.shoppingBlog {
     display: flex;
     margin: 8% 5%;
 }
 
 
-.onlineshopping__imgBox img {
+.shoppingBlog__imgBox img {
     width: 100%;
 }
 
-.onlineshopping__textbox {
+.shoppingBlog__textbox {
     text-align: center;
     margin: auto;
     padding: 0 18px;
 }
 
-.onlineshopping__textbox h2 {
+.shoppingBlog__textbox h2 {
     font-size: 160%;
 }
 
-.onlineshopping__description {
+.shoppingBlog__description {
     margin-top: 20px;
-    font-size: 80%;
 }
 
-.onlineshopping__button {
+.shoppingBlog__button {
     width: 100px;
     background-color: #AD9B50;
     text-align: center;
@@ -256,7 +257,7 @@ onlineshopping BLOG section
     margin: 30px auto;
 }
 
-.onlineshopping__button:hover {
+.shoppingBlog__button:hover {
     background-color: #fff;
     color: #AD9B50;
 }
@@ -272,7 +273,7 @@ news section
 }
 
 .newsContent__box {
-    padding-right: 5%;
+    padding-right: 4%;
 }
 
 .newsContent__box:hover {
@@ -280,7 +281,7 @@ news section
 }
 
 .newsContent__box:first-child {
-    padding-left: 5%;
+    padding-left: 4%;
 }
 
 .newsContent__img {
@@ -365,10 +366,10 @@ footer {
 ------------------- */
 
 @media screen and (min-width: 813px) {
-    .subTitle_sp,.products_pcNO,.onlineshopping_pcNO {
+    .subTitle_sp {
         display: none;
     }
-    }
+}
 
 
 /* -------------------
@@ -382,7 +383,7 @@ footer {
         background-repeat: no-repeat;
         width: 100%;
     }
-    .PCmenu {
+    nav {
         display: none;
     }
     .subTitle {
@@ -408,68 +409,73 @@ footer {
         font-size: 1rem;
         letter-spacing: 0.5rem;
     }
+    
     .subTitle_sp {
         margin: 0 auto;
         font-size: 0.8rem;
         padding-bottom: 30%;
         etter-spacing: 0.3rem;
     }
-    .about {
+
+    .aboutProducts {
         display: block;
     }
 
-    .aboutsp {
+    .productsSP {
         display: flex;
         flex-direction: column-reverse;
     }
-    .about__textbox h2 {
+
+    .aboutProducts__textbox {
+        width: 80%;
+    }
+
+    .aboutProducts__textbox h2 {
         margin-top: 3%;
     }
+
     
-    .about__button {
-        width: 50%;
+    
+    .aboutProducts__button {
+        width: 70%;
         background-color: #AD9B50;
         text-align: center;
         padding: 12px;
         margin-top: 30px;
         font-size: 0.9rem;
     }
-    .products_sp {
-        flex-flow: row-reverse;
-    }
-    .products_spNO {
-        display: none;
-    }
 
-    .about__imgBox img {
-        width: 95%;
+    .aboutProducts__imgBox img {
+        width: 96%;
         height: auto;
-        padding-left:5%;
-    }
-    .about__imgBoxSP img {
-        padding-right:5%;
-        padding-left:0%;
     }
 
-    .col2 {
-        display: block;
-        margin: 0 3%;
+    .aboutProducts__imgBox2  {
+        text-align: right;
     }
-    .col2__content {
+
+    .Classic {
+        display: block;
+        margin: 13% 3%;
+    }
+
+    .Classic__content {
         margin-top: 8%;
     }
 
-    .col2__content1 {
+    .Classic__content1 {
         padding-right: 0px;
     }
-    .col2__content img {
+
+    .Classic__content img {
         width: 100%;
     }
 
-    .col2__content p {
+    .Classic__content p {
         padding-top: 10px;
         font-size: 130%;
     }
+    
     .storySection {
         background-image: url("../img/download-21.jpg");
         background-attachment: scroll;
@@ -478,34 +484,44 @@ footer {
         width: 100%;
         background-position: 60% 30px;
     }
-    .onlineshopping {
+
+    .shoppingBlog {
         display: block;
         margin: 15% 3%;
     }
     
-    .onlineshopping_sp {
+    .blogSP {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .onlineshopping__textbox {
+    .shoppingBlog {
+        margin-top: 25%;
+    }
+
+    .shoppingBlog__textbox {
         text-align: center;
         padding: 0px;
         margin: 0;
     }
     
-    .onlineshopping__textbox h2 {
+    .shoppingBlog__imgBox {
+        width: 100%;
+    }
+
+    .shoppingBlog__textbox h2 {
         font-size: 160%;
         margin-top: 5%;
     }
     
-    .onlineshopping__description {
+    .shoppingBlog__description {
         margin-top: 10px;
         font-size: 80%;
+        font-weight: 100;
     }
     
-    .onlineshopping__button {
-        width: 80%;
+    .shoppingBlog__button {
+        width: 95%;
         background-color: #AD9B50;
         text-align: center;
         padding: 13px;
@@ -513,24 +529,31 @@ footer {
         margin: 30px auto;
     }
 
+    .newsTitle {
+        margin-bottom: 10%;
+        font-size: 1.5rem;
+    }
+
     .newsContent {
         display: flex;
         flex-wrap: wrap;
-
     }
+
     .newsContent {
         display: flex;
         width: 100%;
     }
+
     .newsContent__box{
         padding:0;
     }
+
     .newsContent__box:first-child {
         padding-left: 0%;
     }
 
     .newsContent__box:nth-child(odd) {
-        margin-right: 4%;
+        margin-right: 8%;
     }
 
     .newsContent__box:last-child,.newsContent__box:nth-child(3) {
@@ -551,6 +574,7 @@ footer {
         text-align: center; 
         font-size: 90%;
     }
+
     footer {
         background-image: url("../img/f_bgsp.jpg");
         background-size: 100%;
@@ -574,7 +598,6 @@ footer {
         padding-left: 0%;
     }
 
-    
     .footerlogo_img {
         margin: 0 auto;
         padding-top: 20px;
