@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Overpass',  Yu Gothic Medium , sans-serif;
+    text-decoration: none;
 }
 
 /* ---------------------
-PCFV
+FV
 --------------------- */
 
 .TOPmain {
@@ -25,17 +26,17 @@ PCFV
     letter-spacing: 0.3rem;
 }
 
-.brand {
+.topText {
     text-align: center;
     margin-top: 10%;
 }
 
-.brand__logo {
+.topText__logo {
     width: 23%;
     height: 100%;
 }
 
-.brand__catch {
+.topText__catch {
     padding-top: 60px;
     text-align: center;
     font-weight: 900;
@@ -43,11 +44,11 @@ PCFV
     letter-spacing: 0.5rem;
 }
 
-nav {
+.TOPmain nav {
     padding: 70px;
 }
 
-.PCnavi {
+.PCnav {
     display: flex;
     list-style: none;
     margin: 0 auto;
@@ -57,21 +58,21 @@ nav {
     height:60px;
 }
 
-.PCnavi li {
+.PCnav li {
     padding-left: 13px;
     margin: 20px auto;
 }
 
-.PCnavi li:last-child {
+.PCnav li:last-child {
     padding-right: 13px;
     position: relative;
 }
 
-.PCnavi li:nth-last-child(2) {
+.PCnav li:nth-last-child(2) {
     padding-right: 13px;
 }
 
-.PCnavi li:last-child::before {
+.PCnav li:last-child::before {
     position: absolute;
     top: 2px;
     left: -7px;
@@ -79,12 +80,12 @@ nav {
     content: url("../img/download-4.png");
 }
 
-.PCnavi li a {
+.PCnav li a {
     text-decoration: none;
     color: #000;
 }
 
-.PCnavi li a:hover {
+.PCnav li a:hover {
     color: #AD9B50;
 }
 
@@ -97,47 +98,47 @@ about and products section
     margin-top: 10%;
 }
 
-.aboutProducts__imgBox img {
+.aboutProducts .imgBox img {
     width: 100%;
     height: auto;
 }
 
-.aboutProducts__textbox {
-    padding: 1% 4%;
-    width: 50%;
+.aboutProducts .textBox {
+    padding: 1% 5%;
 }
 
-.aboutProducts__textbox h2 {
+.aboutProducts .textBox h2 {
     font-size: 350%;
     line-height: 95%;
 }
 
-.aboutProducts__textboxSub {
+.aboutProducts .textBox h3 {
     font-size: 120%;
     padding-top: 20px;
     font-weight: 400;
 }
 
-.aboutProducts__textboxSub span {
+.aboutProducts .textBox h3 span {
     color: #AD9B50;
 }
 
-.aboutProducts__description {
+.textBox__description {
     font-size: 80%;
     padding-top: 20px;
     font-weight: 100;
 }
 
-.aboutProducts__button {
+.textBox__button {
     width: 100px;
     background-color: #AD9B50;
     text-align: center;
     padding: 5px;
     margin-top: 30px;
     font-size: 0.9rem;
+    color: #000;
 }
 
-.aboutProducts__button:hover {
+.textBox__button:hover {
     background-color: #fff;
     color: #AD9B50;
 }
@@ -153,25 +154,24 @@ classic series
  margin: 0 40px;
 }
 
-.Classic__content {
+.Classic .series {
     margin-top: 8%;
-    
 }
 
-.Classic__content1 {
+.Classic .series1 {
     padding-right: 80px;
 }
 
-.Classic__content img {
+.Classic .series img {
     width: 100%;
 }
 
-.Classic__content p {
+.Classic .series p {
     padding-top: 10px;
     font-size: 110%;
 }
 
-.Classic__content:hover {
+.Classic .series:hover {
     opacity: 0.7;
 }
 
@@ -229,35 +229,35 @@ shoppingBlog BLOG section
     margin: 8% 5%;
 }
 
-
-.shoppingBlog__imgBox img {
+.shoppingBlog .imgBox img {
     width: 100%;
 }
 
-.shoppingBlog__textbox {
+.shoppingBlog .textBox {
     text-align: center;
     margin: auto;
     padding: 0 18px;
 }
 
-.shoppingBlog__textbox h2 {
+.shoppingBlog .textBox h2 {
     font-size: 160%;
 }
 
-.shoppingBlog__description {
-    margin-top: 20px;
+.shoppingBlog .textBox .textBox__description {
+    margin-top: 10px;
 }
 
-.shoppingBlog__button {
+.shoppingBlog .textBox .textBox__button {
     width: 100px;
     background-color: #AD9B50;
     text-align: center;
     padding: 5px;
     font-size: 0.9rem;
     margin: 30px auto;
+    color: #000;
 }
 
-.shoppingBlog__button:hover {
+.shoppingBlog .textBox .textBox__button:hover {
     background-color: #fff;
     color: #AD9B50;
 }
@@ -310,10 +310,14 @@ news section
     content: "";
 }
 
-.news__more {
+.newsMore {
     margin-top: 2%;
     text-align: center; 
     font-size: 90%;
+}
+
+.newsMore a {
+    color: #000;
 }
 
 /* ---------------------
@@ -344,21 +348,25 @@ footer {
     display: flex;
 }
 
-.footerNavi {
+.footerBox__logo {
+    margin-right: 5%;
+}
+
+.footerBox__nav {
     padding-left: 5%;
 }
 
-.footerNavi ul {
+.footerBox__nav ul {
     list-style: none;
     font-size: 90%;
 }
 
-.footerNavi ul li {
+.footerBox__nav ul li {
     padding-bottom: 6%;
 }
 
-.footerlogo_img {
-    margin-right: 5%;
+.footerBox__nav ul li a {
+    color: #000;
 }
 
 /* -------------------
@@ -366,7 +374,7 @@ footer {
 ------------------- */
 
 @media screen and (min-width: 813px) {
-    .subTitle_sp {
+    .topText__subTitle {
         display: none;
     }
 }
@@ -383,26 +391,26 @@ footer {
         background-repeat: no-repeat;
         width: 100%;
     }
-    nav {
+    .TOPmain nav {
         display: none;
     }
-    .subTitle {
+
+    .TOPmain__subTitle {
         display: none;
     }
     
-    .brandTitle {
+    .topText {
         text-align: center;
-        padding-top: 30%;
+        padding-top: 40%;
         margin-top: 0;
     }
 
-    
-    .brandTitle__img {
+    .topText__logo {
         width: 30%;
         height: 100%;
     }
     
-    .brandTitle__sub {
+    .topText__catch {
         padding: 30px 0 30px 0;
         text-align: center;
         font-weight: 900;
@@ -410,10 +418,10 @@ footer {
         letter-spacing: 0.5rem;
     }
     
-    .subTitle_sp {
+    .topText__subTitle {
         margin: 0 auto;
         font-size: 0.8rem;
-        padding-bottom: 30%;
+        padding-bottom: 40%;
         etter-spacing: 0.3rem;
     }
 
@@ -424,19 +432,19 @@ footer {
     .productsSP {
         display: flex;
         flex-direction: column-reverse;
+        text-align: right;
     }
 
-    .aboutProducts__textbox {
+    .aboutProducts .textBox {
         width: 80%;
+        text-align: left;
     }
 
-    .aboutProducts__textbox h2 {
+    .aboutProducts .textBox h2 {
         margin-top: 3%;
     }
 
-    
-    
-    .aboutProducts__button {
+    .aboutProducts .textBox .textBox__button {
         width: 70%;
         background-color: #AD9B50;
         text-align: center;
@@ -445,33 +453,21 @@ footer {
         font-size: 0.9rem;
     }
 
-    .aboutProducts__imgBox img {
+    .aboutProducts .imgBox img {
         width: 96%;
         height: auto;
-    }
-
-    .aboutProducts__imgBox2  {
-        text-align: right;
     }
 
     .Classic {
         display: block;
         margin: 13% 3%;
     }
-
-    .Classic__content {
-        margin-top: 8%;
-    }
-
-    .Classic__content1 {
+    
+    .Classic .series1 {
         padding-right: 0px;
     }
 
-    .Classic__content img {
-        width: 100%;
-    }
-
-    .Classic__content p {
+    .Classic .series p {
         padding-top: 10px;
         font-size: 130%;
     }
@@ -499,28 +495,28 @@ footer {
         margin-top: 25%;
     }
 
-    .shoppingBlog__textbox {
+    .shoppingBlog .textBox {
         text-align: center;
         padding: 0px;
         margin: 0;
     }
     
-    .shoppingBlog__imgBox {
+    .shoppingBlog .imgBox img {
         width: 100%;
     }
 
-    .shoppingBlog__textbox h2 {
+    .shoppingBlog .textBox h2 {
         font-size: 160%;
         margin-top: 5%;
     }
     
-    .shoppingBlog__description {
+    .shoppingBlog .textBox .textBox__description {
         margin-top: 10px;
         font-size: 80%;
         font-weight: 100;
     }
     
-    .shoppingBlog__button {
+    .shoppingBlog .textBox .textBox__button {
         width: 95%;
         background-color: #AD9B50;
         text-align: center;
@@ -569,7 +565,7 @@ footer {
         width: 40%;
     }
     
-    .news__more {
+    .newsMore {
         margin-top: 4%;
         text-align: center; 
         font-size: 90%;
@@ -598,12 +594,12 @@ footer {
         padding-left: 0%;
     }
 
-    .footerlogo_img {
+    .footerBox__logo {
         margin: 0 auto;
         padding-top: 20px;
     }
 
-    .footerNavi {
+    .footerBox__nav {
         display: none;
     }
 }
