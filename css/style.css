@@ -5,11 +5,17 @@
     padding: 0;
     font-family: 'Overpass',  Yu Gothic Medium , sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 /* ---------------------
 FV
 --------------------- */
+
+.mainContent {
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
 .TOPmain {
     background-image: url("../img/download-3.jpg");
@@ -33,7 +39,6 @@ FV
 
 .topText__logo {
     width: 23%;
-    height: 100%;
 }
 
 .topText__catch {
@@ -48,7 +53,7 @@ FV
     padding: 70px;
 }
 
-.PCnav {
+.pcNav {
     display: flex;
     list-style: none;
     margin: 0 auto;
@@ -58,21 +63,21 @@ FV
     height:60px;
 }
 
-.PCnav li {
+.pcNav li {
     padding-left: 13px;
     margin: 20px auto;
 }
 
-.PCnav li:last-child {
+.pcNav li:last-child {
     padding-right: 13px;
     position: relative;
 }
 
-.PCnav li:nth-last-child(2) {
+.pcNav li:nth-last-child(2) {
     padding-right: 13px;
 }
 
-.PCnav li:last-child::before {
+.pcNav li:last-child::before {
     position: absolute;
     top: 2px;
     left: -7px;
@@ -80,12 +85,12 @@ FV
     content: url("../img/download-4.png");
 }
 
-.PCnav li a {
+.pcNav li a {
     text-decoration: none;
     color: #000;
 }
 
-.PCnav li a:hover {
+.pcNav li a:hover {
     color: #AD9B50;
 }
 
@@ -126,19 +131,19 @@ about and products section
     font-size: 80%;
     padding-top: 20px;
     font-weight: 100;
+    margin-bottom: 30px;
 }
 
-.textBox__button {
+.btn {
     width: 100px;
     background-color: #AD9B50;
     text-align: center;
     padding: 5px;
-    margin-top: 30px;
     font-size: 0.9rem;
     color: #000;
 }
 
-.textBox__button:hover {
+.btn:hover {
     background-color: #fff;
     color: #AD9B50;
 }
@@ -148,30 +153,30 @@ about and products section
 classic series
 --------------------- */
 
-.Classic {
+.classic {
  display: flex;
  justify-content: center;
  margin: 0 40px;
 }
 
-.Classic .series {
+.classic .series {
     margin-top: 8%;
 }
 
-.Classic .series1 {
+.classic .series1 {
     padding-right: 80px;
 }
 
-.Classic .series img {
+.classic .series img {
     width: 100%;
 }
 
-.Classic .series p {
+.classic .series p {
     padding-top: 10px;
     font-size: 110%;
 }
 
-.Classic .series:hover {
+.classic .series:hover {
     opacity: 0.7;
 }
 
@@ -233,33 +238,24 @@ shoppingBlog BLOG section
     width: 100%;
 }
 
-.shoppingBlog .textBox {
+.textboxSb {
     text-align: center;
     margin: auto;
     padding: 0 18px;
 }
 
-.shoppingBlog .textBox h2 {
+.textboxSb__title {
     font-size: 160%;
 }
 
-.shoppingBlog .textBox .textBox__description {
+.textboxSb__description {
     margin-top: 10px;
-}
-
-.shoppingBlog .textBox .textBox__button {
-    width: 100px;
-    background-color: #AD9B50;
-    text-align: center;
-    padding: 5px;
     font-size: 0.9rem;
-    margin: 30px auto;
-    color: #000;
+    font-weight: 100;
 }
 
-.shoppingBlog .textBox .textBox__button:hover {
-    background-color: #fff;
-    color: #AD9B50;
+.shoppingBlog__btn{
+    margin: 30px auto;
 }
 
 /* ---------------------
@@ -458,16 +454,16 @@ footer {
         height: auto;
     }
 
-    .Classic {
+    .classic {
         display: block;
         margin: 13% 3%;
     }
     
-    .Classic .series1 {
+    .classic .series1 {
         padding-right: 0px;
     }
 
-    .Classic .series p {
+    .classic .series p {
         padding-top: 10px;
         font-size: 130%;
     }
@@ -495,7 +491,7 @@ footer {
         margin-top: 25%;
     }
 
-    .shoppingBlog .textBox {
+    .textboxSb {
         text-align: center;
         padding: 0px;
         margin: 0;
@@ -505,23 +501,20 @@ footer {
         width: 100%;
     }
 
-    .shoppingBlog .textBox h2 {
+    .textboxSb__title {
         font-size: 160%;
         margin-top: 5%;
     }
     
-    .shoppingBlog .textBox .textBox__description {
+    .textboxSb__description {
         margin-top: 10px;
         font-size: 80%;
         font-weight: 100;
     }
     
-    .shoppingBlog .textBox .textBox__button {
-        width: 95%;
-        background-color: #AD9B50;
-        text-align: center;
-        padding: 13px;
-        font-size: 0.9rem;
+    .btn {
+        width: 100%;
+        padding: 13px 0;
         margin: 30px auto;
     }
 
